@@ -18,7 +18,6 @@ namespace game.Controllers
         [HttpPost]
         public IActionResult RunGame([FromBody] Game game)
         {
-            //montar o request..
             var result = _gameService.RunGame(game);
             return Ok(result);
         }
